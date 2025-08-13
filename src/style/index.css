@@ -1,0 +1,16 @@
+a > img{
+    height: 15vh;
+    width: 15vh;
+}
+
+.logo{
+    padding-left: 30vh;
+}
+
+@media screen (max-width: 560px)
+{ 
+    .logo{
+        padding-left:0vh;
+        text-align:'center';  
+    }
+}
