@@ -1,16 +1,112 @@
-a > img{
-    height: 15vh;
-    width: 15vh;
+html, body{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0;
+  overflow-x: hidden;
+} 
+.img-homepage{
+    background-image: src("static/img/20250813_2136_Vinho Rosé Aconchegante_remix_01k2jzzj9feg29b8yvz1bw49cy.png");
+    
 }
 
-.logo{
-    padding-left: 30vh;
+header{
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    text-align: center;
+  }
+  /* Estilos padrão */
+
+a>img{
+    height: 25vh;
+    width: 35vh;
+    padding-left: 20vh;
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-@media screen (max-width: 560px)
-{ 
-    .logo{
-        padding-left:0vh;
-        text-align:'center';  
-    }
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  padding-right: 20vh;
+}
+
+.nav-link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 2.5vh;
+  transition: color 0.3s ease;
+  padding-bottom: 8px; /* espaço para a animação abaixo */
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: grey;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transform: none;
+  border-radius: 0;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+@media (max-width: 950px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+  }
+    .navbar-links.show {
+    display: flex;
+  }
+  a>img{
+    padding-left: 0vh;
+  }
 }
