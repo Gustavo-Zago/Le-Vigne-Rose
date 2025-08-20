@@ -123,16 +123,19 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+.parallax {
+  /* The image used */
+  background-image: url("sua_imagem.jpg");
 
-  .parallax {
-    position: relative;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transform: translateZ(0);
-    /* Ajuda na performance */
-  }
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
   .content {
     height: 100vh;
