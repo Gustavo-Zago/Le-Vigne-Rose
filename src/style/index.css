@@ -45,7 +45,7 @@
 
   .nav-link {
     position: relative;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 2.5vh;
     transition: color 0.3s ease;
@@ -60,7 +60,7 @@
     bottom: 0;
     width: 8px;
     height: 8px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     transform: translateX(-50%);
     transition: all 0.3s ease;
@@ -87,55 +87,18 @@
     cursor: pointer;
   }
 
-  /* Seção com parallax */
-  .primeira-img {
-    background-image: url('../static/img/uva-rosé.png');
-    /* Coloque o link da imagem */
-    height: 100vh;
-    /* Ocupa a altura da tela */
+  .parallax {
+    /* The image used */
+    /*background-image: url("sua_imagem.jpg");*/
+    /* Set a specific height */
+    min-height: 100vh;
+    min-width: 100vh;
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    /* Faz o truque do parallax */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
-  .segunda-img {
-    background-image: url('../static/img/vinho-lareira.png');
-    /* Coloque o link da imagem */
-    height: 100vh;
-    /* Ocupa a altura da tela */
-    background-attachment: fixed;
-    /* Faz o truque do parallax */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .terceira-img {
-    background-image: url('../static/img/uva-rosé.png');
-    /* Coloque o link da imagem */
-    height: 100vh;
-    /* Ocupa a altura da tela */
-    background-attachment: fixed;
-    /* Faz o truque do parallax */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-.parallax {
-  /* The image used */
-  background-image: url("sua_imagem.jpg");
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
   .content {
     height: 100vh;
@@ -146,10 +109,39 @@
     background: white;
   }
 
+  .container {
+    background-color: #fbc0be;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+  }
+
+  .container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-homepage {
+    height: 60vh;
+    width: 80vh;
+
+  }
 
   @media (max-width: 1100px) {
     .menu-toggle {
       display: block;
+    }
+
+    .parallax {
+      min-height: 100vh;
+      min-width: 0.1vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     .navbar-links {

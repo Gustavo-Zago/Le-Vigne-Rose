@@ -10,30 +10,35 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <!-- LOGO -->
-        <div class="navbar-logo">
-            <a href="/">
-                <img src="static/img/Logotipo Elegante _Le Vigne Rosé_.png" class="img-homepage" alt="Logo">
-            </a>
+    <div class="parallax" style="background-image: url('static/img/uva-rosé.png');">
+        <header class="navbar">
+            <div class="navbar-logo">
+                <a href="/">
+                    <img src="static/img/BrancoLe Vigne Rosé em Cursiva Elegante.png" alt="Logo">
+                </a>
+            </div>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <nav class="navbar-links" id="navbarLinks">
+                <a class="nav-link" href="/">ABOUT</a>
+                <a class="nav-link" href="/">CONTACT</a>
+                <a class="nav-link" href="/">PRODUCT</a
+            </nav>
+        </header>
+        <div class="container-img">
+            <img src="static/img/BrancoLe Vigne Rosé em Cursiva Elegante.png" class="img-homepage" alt="Logo">
         </div>
+        
+    </div>
+    <div class="parallax" style="background-image: url('static/img/Taca-Petiscos.png');"></div>
+    <div class="parallax" style="background-image: url('static/img/uvacomtaca.png');"></div>
 
-        <!-- BOTÃO MENU HAMBÚRGUER (visível em telas pequenas) -->
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-        <!-- LINKS DO MENU -->
-        <nav class="navbar-links" id="navbarLinks">
-            <a class="nav-link" href="/">ABOUT</a>
-            <a class="nav-link" href="/">CONTACT</a>
-            <a class="nav-link" href="/">PRODUCT</a>
-        </nav>
-    </header>
-    <div class="parallax" style="background-image: url('static/img/uva-rosé.png');"></div>
-
-    <div class="parallax" style="background-image: url('static/img/vinho-lareira.png');"></div>
-
-    <div class="parallax" style="background-image: url('static/img/uva-rosé.png');"></div>
-
+    <section>
+        <div class="container">
+        </div>
+    </section>
     <script src="static/scripts/index.js"></script>
 </body>
+
 </html>
