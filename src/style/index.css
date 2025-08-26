@@ -52,7 +52,6 @@
     padding-bottom: 8px;
     /* espaço para a animação abaixo */
   }
-
   .nav-link::after {
     content: "";
     position: absolute;
@@ -83,14 +82,12 @@
     background: none;
     border: none;
     font-size: 2rem;
-    color: black;
+    color: white;
     cursor: pointer;
   }
 
   .parallax {
-    /* The image used */
     /*background-image: url("sua_imagem.jpg");*/
-    /* Set a specific height */
     min-height: 100vh;
     min-width: 100vh;
     /* Create the parallax scrolling effect */
@@ -118,17 +115,46 @@
     height: 20vh;
   }
 
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* pode ajustar em mobile */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.img-homepage {
+  max-width: 90%;
+  max-height: 60vh;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+.text-segunda{
+  position: absolute;
+  left: 50%;
+  font-size: 5vh;
+}
+@media (max-width: 820px) {
+  .text-segunda{
+  position: absolute;
+  left: 0%;
+  font-size: 4vh;
+}
+}
+@media (max-width: 768px) {
   .container-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: auto; 
+    padding: 40px 20px;
   }
 
   .img-homepage {
-    height: 60vh;
-    width: 80vh;
-
+    max-width: 100%;
+    max-height: 40vh;
   }
+}
 
   @media (max-width: 1100px) {
     .menu-toggle {
@@ -149,7 +175,6 @@
       flex-direction: column;
       width: 100%;
       gap: 10px;
-      margin-top: 10px;
     }
 
     .navbar-links.show {
