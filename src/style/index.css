@@ -136,11 +136,10 @@
   position: absolute;
   left: 50%;
   font-size: 5vh;
+  padding-top: 40vh;
 }
 @media (max-width: 820px) {
   .text-segunda{
-  position: absolute;
-  left: 0%;
   font-size: 4vh;
 }
 }
