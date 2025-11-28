@@ -1,8 +1,5 @@
-
-
-
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -112,26 +109,26 @@ header {
 
 .gridparallax {
   display: grid;
-  
+
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 60px; 
-  padding: 80px 5%; 
+  gap: 60px;
+  padding: 80px 5%;
   background: white;
   justify-items: center;
 }
 
 .card {
   width: 200%;
-  
+
   max-width: 700px;
-  
-  aspect-ratio: 1 / 1.6; 
+
+  aspect-ratio: 1 / 1.6;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.4s ease;
-  position: relative; 
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
 }
 
 figure {
@@ -147,20 +144,35 @@ figure {
 .card img.card-img-top {
   height: 100%;
   width: auto;
-  max-width: 100%; 
-  object-fit: contain; 
+  max-width: 100%;
+  object-fit: contain;
   filter: drop-shadow(5px 10px 15px rgba(0, 0, 0, 0.5));
-  transition: transform 1s ease; 
+  transition: transform 1s ease;
 }
 
 
 .card:hover {
   z-index: 5;
-  cursor:grab;
+  cursor: grab;
 }
 
 .card:hover img.card-img-top {
-  transform: scale(1.5); 
+  transform: scale(1.5);
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
 }
 
 @media (max-width: 1100px) {
@@ -172,7 +184,7 @@ figure {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px 0;
     position: absolute;
     top: 100%;
@@ -190,10 +202,14 @@ figure {
   }
 }
 
+.container {
+  background-color: thistle;
+}
+
 
 @media (max-width: 768px) {
 
-  
+
   .container-img {
     height: auto;
     padding: 40px 20px;
@@ -204,7 +220,7 @@ figure {
     max-height: 40vh;
   }
 
-  
+
   .gridparallax {
     grid-template-columns: 1fr;
   }
@@ -217,4 +233,3 @@ figure {
     transform: scale(1);
   }
 }
-
